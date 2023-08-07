@@ -23,6 +23,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+import { AdPopup } from "./AdPopup"; // 引用新组件
 import { SideBar } from "./sidebar";
 import { useAppConfig } from "../store/config";
 import { AuthPage } from "./auth";
@@ -180,10 +181,13 @@ export function Home() {
   }
 
   return (
-    <ErrorBoundary>
-      <Router>
-        <Screen />
-      </Router>
-    </ErrorBoundary>
+    <>
+      <AdPopup />
+      <ErrorBoundary>
+        <Router>
+          <Screen />
+        </Router>
+      </ErrorBoundary>
+    </>
   );
 }
