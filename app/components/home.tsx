@@ -23,7 +23,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { AdPopup } from "./AdPopup"; // 引用新组件
+import { AdPopup } from "./adPopup"; // 引用新组件
 import { SideBar } from "./sidebar";
 import { useAppConfig } from "../store/config";
 import { AuthPage } from "./auth";
