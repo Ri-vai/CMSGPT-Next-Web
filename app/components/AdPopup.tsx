@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DisclaimerPopup from "./disclaimerPopup"; // 引入新的弹窗组件
 import styles from "./home.module.scss"; // 导入样式
-
+import Wechat from "../icons/Wechat.svg";
 export function AdPopup() {
   const [showAd, setShowAd] = useState(true);
   const [showDisclaimer, setShowDisclaimer] = useState(false); // 控制免责声明弹窗的显示与隐藏
@@ -15,19 +15,13 @@ export function AdPopup() {
     <div className={styles["ad-popup"]}>
       <div className={styles["ad-content"]}>
         <div className={styles["ad-sections"]}>
-          <div className={styles["ad-section"]}>
+          {/* <div className={styles["ad-section"]}>
             <h3>库迪咖啡新活动欢迎参加,给作者一点小小的支持吧！</h3>
-            <img
-              src="https://ts2.cn.mm.bing.net/th?id=OIP-C.1dqqkRDPhAlBhhamaVtJTgHaE8&w=80&h=80&c=1&vt=10&bgcl=f6457f&r=0&o=6&dpr=2&pid=5.1"
-              alt="活动"
-            />
-          </div>
+            <Wechat width={200} height={200}/>
+          </div> */}
           <div className={styles["ad-section"]}>
             <h3>若使用中遇到问题欢迎加入群组反馈&交流</h3>
-            <img
-              src="https://ts2.cn.mm.bing.net/th?id=OIP-C.1dqqkRDPhAlBhhamaVtJTgHaE8&w=80&h=80&c=1&vt=10&bgcl=f6457f&r=0&o=6&dpr=2&pid=5.1"
-              alt="反馈"
-            />
+            <Wechat width={200} height={200} />
           </div>
         </div>
         <div className={styles["disclaimer-section"]}>
